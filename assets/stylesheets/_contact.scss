@@ -1,5 +1,6 @@
 .map-section{
-    background-color: $bg-odd;
+    background-color: $bg-even;
+
  }
  .di{
      width: 5px;
@@ -17,4 +18,13 @@
               text-transform: uppercase;
          }
      }
+     
+ }
+ .title-heading{
+     text-transform: uppercase;
+ }
+
+ .contact-form{
+    background-color: $bg-odd;
+
  }

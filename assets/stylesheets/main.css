@@ -310,6 +310,12 @@ form button {
   font-weight: bold;
 }
 
+form textarea {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px 18px;
+}
+
 form button:hover {
   background-color: #636059;
   cursor: pointer;
@@ -317,7 +323,7 @@ form button:hover {
 }
 
 .map-section {
-  background-color: #f5f0e3;
+  background-color: #f2e9d2;
 }
 
 .di {
@@ -339,5 +345,13 @@ form button:hover {
 .contact-hero li a {
   color: white;
   text-transform: uppercase;
+}
+
+.title-heading {
+  text-transform: uppercase;
+}
+
+.contact-form {
+  background-color: #f5f0e3;
 }
 /*# sourceMappingURL=main.css.map */
