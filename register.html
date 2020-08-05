@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css">
     <link rel="stylesheet" href="./assets/stylesheets/main.css">
 </head>
-<body>
-    <div class="container grid col-2 col-gap">
-    <div class="login-page">
-        <div class="form">
-            <form>
-                <input type="email" placeholder='Email' required>
-                <input type="password" placeholder="Password" required>
-                <div class="flex">
-                <a href="#" class="btn">Login</a>
-                <a href="#" class="forget">Forget Password ?</a>
-            </div>
 
+<body>
+    <div class="contact-hero">
+        <h1>Register</h1>
+        <ul class="flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Register</a></li>
+        </ul>
+    </div>
+    <div class="container grid col-2 col-gap ml">
+        <div class="login-page">
+            <div class="form">
+                <form>
+                    <input type="email" placeholder='Email' required>
+                    <input type="password" placeholder="Password" required>
+                    <div class="flex flex-align">
+                        <button class="btn">Login</button>
+                        <a href="#" class="forgot">Forgot Password ?</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="registration-page">
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Repeat password" required>
+                <button class="btn">Register</button>
             </form>
         </div>
     </div>
-    <div class="registration-page">
-        <form>
-        <input type="text" placeholder="Username" required>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Password" required>
-        <input type = "password" placeholder="Repeat password" required>
-        <a href="#" class="btn">Register</a>
-    </form>
-    </div>
-</div>
 </body>
 </html>

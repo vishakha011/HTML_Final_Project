@@ -165,6 +165,12 @@ p {
           align-items: center;
 }
 
+.flex-align {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .flex-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,6 +311,50 @@ form textarea {
   width: 100%;
   margin-top: 15px;
   padding: 12px 18px;
+}
+
+form button {
+  color: white;
+}
+
+form button:hover {
+  background-color: #636059;
+  cursor: pointer;
+}
+
+form input {
+  padding: 12px 18px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+form textarea {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px 18px;
+}
+
+form button {
+  color: white;
+}
+
+form button:hover {
+  background-color: #636059;
+  cursor: pointer;
+}
+
+.forgot {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .col-2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .register-page {
+    margin-top: 66px;
+  }
 }
 
 .map-section {
