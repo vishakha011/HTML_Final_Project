@@ -95,7 +95,7 @@ body {
 }
 
 h1 {
-  font-size: 2.6;
+  font-size: 2.6rem;
   font-weight: 700;
 }
 
@@ -314,5 +314,30 @@ form button:hover {
   background-color: #636059;
   cursor: pointer;
   color: #484334;
+}
+
+.map-section {
+  background-color: #f5f0e3;
+}
+
+.di {
+  width: 5px;
+  height: 5px;
+  color: red;
+}
+
+.contact-hero {
+  background-color: #7575c5;
+  padding: 25px;
+  color: white;
+}
+
+.contact-hero li {
+  padding: 5px;
+}
+
+.contact-hero li a {
+  color: white;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */

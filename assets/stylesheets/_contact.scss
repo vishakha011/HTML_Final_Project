@@ -1,0 +1,20 @@
+.map-section{
+    background-color: $bg-odd;
+ }
+ .di{
+     width: 5px;
+     height: 5px;
+     color: red;
+ }
+ .contact-hero{
+     background-color: rgb(117, 117, 197);
+     padding: 25px;
+     color: white;
+     li{
+         padding: 5px;
+         a{
+             color: white;
+              text-transform: uppercase;
+         }
+     }
+ }
