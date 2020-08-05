@@ -1,0 +1,428 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&family=PT+Serif:wght@400;700&family=Rosario:wght@400;500;600;700&family=Satisfy&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background: none;
+}
+
+input,
+button,
+textarea {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #484334;
+  line-height: 1.5;
+  font-family: 'Rosario', sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+@media all and (max-width: 900px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-align {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid-center {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.col-1 {
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+.col-2 {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.col-3 {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.col-4 {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.col-5 {
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+.col-6 {
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+.col-7 {
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+}
+
+.col-8 {
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+}
+
+.col-9 {
+  -ms-grid-columns: (1fr)[9];
+      grid-template-columns: repeat(9, 1fr);
+}
+
+.col-10 {
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+}
+
+.col-11 {
+  -ms-grid-columns: (1fr)[11];
+      grid-template-columns: repeat(11, 1fr);
+}
+
+.col-12 {
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+.col-gap {
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.padding {
+  padding: 5rem 0;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  margin-top: 10px;
+  color: #484338;
+  border: 1px solid #a58251;
+}
+
+form input {
+  padding: 12px 18px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+form textarea {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px 18px;
+}
+
+form button {
+  color: white;
+}
+
+form button:hover {
+  background-color: #ffba6b;
+  cursor: pointer;
+}
+
+.user-auth {
+  background-color: #f5f0e3;
+  padding-bottom: 25px;
+}
+
+.login-page {
+  margin-top: 25px;
+}
+
+.registration-page {
+  margin-top: 25px;
+}
+
+.forgot {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .col-2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .registration-page {
+    margin-top: 66px;
+  }
+}
+
+.map-section {
+  background-color: #f2e9d2;
+  position: relative;
+}
+
+.contact-hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/assets/images/bg2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/bg2.jpg");
+  background-size: contain;
+  background-attachment: fixed;
+  padding: 4rem;
+  color: white;
+}
+
+.contact-hero h1 {
+  padding-left: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .7rem;
+}
+
+.contact-hero li {
+  padding-left: 2rem;
+}
+
+.contact-hero li a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+}
+
+.title-heading {
+  text-transform: uppercase;
+}
+
+.contact-form {
+  background-color: #f5f0e3;
+}
+
+.country-card {
+  background-color: #3fcf3f;
+  width: 420px;
+  padding: 45px;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.country-card h3 {
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  letter-spacing: .5rem;
+  margin-bottom: 30px;
+}
+
+.country-card ul li {
+  padding: 10px;
+}
+
+.country-card ul i {
+  background-color: white;
+  color: black;
+  padding: 15px;
+  border-radius: 50%;
+  height: 46px;
+  margin-right: 25px;
+}
+
+@media only screen and (max-width: 900px) {
+  .country-card {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

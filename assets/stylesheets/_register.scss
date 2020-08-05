@@ -1,0 +1,30 @@
+.user-auth{
+    background-color: $bg-odd;
+    padding-bottom: 25px;
+}
+
+.login-page{
+    margin-top: 25px;
+
+}
+.registration-page{
+    margin-top: 25px;
+}
+.forgot{
+   margin-left: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+     .col-2{
+        grid-template-columns: 1fr; 
+     }
+      
+     .registration-page{
+        margin-top: 66px;
+    }
+     
+}
+ 
+
+
+

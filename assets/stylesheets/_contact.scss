@@ -1,0 +1,84 @@
+.map-section {
+    background-color: $bg-even;
+    position: relative;
+
+}
+
+.contact-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/bg2.jpg');
+    background-size: contain;
+    background-attachment: fixed;
+    padding: 4rem;
+    color: white;
+
+    h1 {
+        padding-left: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: .7rem;
+    }
+
+    li {
+        padding-left: 2rem;
+
+        a {
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: .4rem;
+
+
+        }
+
+
+    }
+
+}
+
+.title-heading {
+    text-transform: uppercase;
+}
+
+.contact-form {
+    background-color: $bg-odd;
+
+}
+
+.country-card {
+    background-color: rgb(63, 207, 63);
+    width: 420px;
+    padding: 45px;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+
+    h3 {
+        text-transform: uppercase;
+        background-color: white;
+        color: black;
+        letter-spacing: .5rem;
+        margin-bottom: 30px;
+    }
+
+    ul {
+        li {
+            padding: 10px;
+        }
+
+        i {
+            background-color: white;
+            color: black;
+            padding: 15px;
+            border-radius: 50%;
+            height: 46px;
+            margin-right: 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .country-card {
+        display: none;
+    }
+
+}
