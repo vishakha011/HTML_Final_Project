@@ -1,0 +1,28 @@
+form{
+    input{
+        padding: 12px 18px;
+        width: 100%;
+        margin-top: 20px
+    }
+    button{
+        background-color: red;
+        padding: 12px 24px;
+        margin-top: 15px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;;
+        
+        
+    }
+    button:hover{
+        background-color: $hover-color;
+        cursor: pointer;
+        color: $text-color;
+    }
+}
+
+
+@media all and (max-width: 900px) {
+       
+  }
+
