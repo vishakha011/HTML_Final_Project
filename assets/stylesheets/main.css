@@ -318,8 +318,21 @@ form button {
 }
 
 form button:hover {
-  background-color: #636059;
+  background-color: #ffba6b;
   cursor: pointer;
+}
+
+.user-auth {
+  background-color: #f5f0e3;
+  padding-bottom: 25px;
+}
+
+.login-page {
+  margin-top: 25px;
+}
+
+.registration-page {
+  margin-top: 25px;
 }
 
 .forgot {
@@ -331,7 +344,7 @@ form button:hover {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .register-page {
+  .registration-page {
     margin-top: 66px;
   }
 }
