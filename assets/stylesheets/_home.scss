@@ -1,0 +1,714 @@
+.home-main {
+	background-color: $bg-odd;
+
+	& section:nth-child(even) {
+		background-color: $bg-even;
+	}
+
+	h5 {
+		font-size: 1.025rem;
+		font-weight: 300;
+	}
+
+	@media screen and (max-width: 1024px) {
+		.col-2 {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+}
+
+// hero
+
+.hero {
+	background: url(../images/pattern-chakras-alt-color.jpg);
+}
+
+.hero-text {
+	h1 {
+		font-size: 3rem;
+		text-transform: uppercase;
+		letter-spacing: 1rem;
+		font-family: $ctc-heading;
+
+		span {
+			font-family: "PT Serif", serif;
+			letter-spacing: 0.1rem;
+			font-weight: 700;
+			color: #7e8446;
+		}
+	}
+
+	h3 {
+		margin: 2rem auto;
+		font-size: 1.25rem;
+	}
+
+	.cta-btn {
+		transition: all 1s ease-in-out;
+	}
+
+	.cta-btn:hover {
+		background-color: $hover-color;
+	}
+}
+
+.hero-img {
+	width: 80%;
+}
+
+.cls-1 {
+	transform: translate(-82.71 199.69) rotate(-45);
+	fill-opacity: 0;
+}
+
+.cls-sm,
+.cls-md,
+.cls-lg {
+	animation-name: ripple-sm;
+	animation-duration: 6s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.cls-md {
+	animation-name: ripple-md;
+	animation-delay: 1.5s;
+}
+
+.cls-lg {
+	animation-name: ripple-lg;
+	animation-delay: 2.5s;
+}
+
+@keyframes ripple-sm {
+	0% {
+		fill-opacity: 0;
+		fill: #a58251;
+		r: 0;
+	}
+
+	100% {
+		fill-opacity: 0.2;
+		fill: #e98f10;
+		r: 199.69;
+	}
+}
+
+@keyframes ripple-md {
+	0% {
+		fill-opacity: 0;
+		fill: #a58251;
+		r: 0;
+	}
+
+	100% {
+		fill-opacity: 0.2;
+		fill: #e98f10;
+		r: 199.69;
+	}
+}
+
+@keyframes ripple-lg {
+	0% {
+		fill-opacity: 0;
+		fill: #a58251;
+		r: 0;
+	}
+
+	100% {
+		fill-opacity: 0.2;
+		fill: #e98f10;
+		r: 199.69;
+	}
+}
+
+// type of yoga
+
+.yogas {
+	flex-flow: row wrap;
+	h4 {
+		font-size: 1.4rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+	.yoga-icon {
+		width: 82px;
+		height: 82px;
+		background-color: #e2ddcf;
+		border-radius: 50%;
+		transition: all 0.8s ease-in-out;
+
+		img {
+			width: 68px;
+		}
+
+		&:hover {
+			background-color: $bg-header;
+		}
+	}
+}
+
+.yogas-feature-image {
+	height: 500px;
+	text-align: right;
+	background: url(../images/Home/main-intro-leaf.png) no-repeat;
+	background-position: -2px 0;
+	justify-content: flex-end;
+
+	img {
+		width: 350px;
+		height: 350px;
+	}
+}
+
+// Call to Action
+
+.call-to-action {
+	max-width: 1500px;
+	margin: 0 auto;
+	background-color: white;
+	background: url(../images/Home/parallax-decor.png) no-repeat;
+	background-size: cover;
+	background-position: 0 -80px;
+
+	.cta {
+		padding-right: 3.5rem;
+	}
+
+	.cta-heading {
+		font-family: $ctc-heading;
+		color: #a58251;
+		font-size: 3.5rem;
+		letter-spacing: 3px;
+		font-weight: 400;
+	}
+
+	.cta-heading-differnt {
+		font-family: $heading-font;
+		letter-spacing: 1rem;
+		font-weight: 700;
+		color: $bg-header;
+	}
+
+	h5 {
+		font-size: 1.1rem;
+		font-weight: 500;
+		margin-bottom: 2rem;
+	}
+	.home-primary-btn {
+		background-color: $bg-header;
+	}
+}
+
+// Courses
+
+.features-courses {
+	.courses {
+		margin: 4rem 0;
+		gap: 2rem;
+	}
+
+	.course {
+		position: relative;
+
+		&:hover .read-more {
+			background: linear-gradient(
+				rgba($bg-header, 0.8) 50%,
+				rgba($hover-color, 0.8) 50% 50%
+			);
+			opacity: 1;
+		}
+	}
+
+	.inner {
+		background-color: #fff;
+		position: relative;
+		z-index: 2;
+	}
+
+	.course-img img {
+		width: 100%;
+	}
+
+	.price {
+		flex: 0 1 40%;
+		background-color: $bg-even;
+		padding: 0.5rem;
+		font-size: 1.2rem;
+	}
+
+	.course-detail {
+		padding: 1rem 1rem 4rem;
+		text-align: left;
+
+		strong {
+			font-size: 1.2rem;
+			font-weight: 400;
+			word-spacing: 5px;
+		}
+	}
+
+	h4 {
+		font-size: 1.3rem;
+		margin: 1rem 0;
+	}
+
+	p {
+		letter-spacing: 0.5px;
+		margin: 1rem 0;
+	}
+
+	.read-more {
+		position: absolute;
+		top: 10px;
+		bottom: 10px;
+		left: 10px;
+		right: 10px;
+		opacity: 0;
+		z-index: 2;
+		transition: all 1s ease-in-out;
+
+		a {
+			background-color: $hover-color;
+			color: $text-color;
+			margin-top: 100px;
+			align-self: flex-start;
+		}
+	}
+}
+
+// Events
+
+.events {
+	gap: 2rem;
+}
+
+.event {
+	position: relative;
+	text-align: left;
+
+	figure {
+		font-size: 0;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	&:hover .event-tagline {
+		animation-name: slide-center;
+		animation-timing-function: ease-in-out;
+		animation-duration: 0.8s;
+		position: relative;
+		text-align: center;
+	}
+
+	&:hover .event-location {
+		animation-name: slide-left;
+		animation-timing-function: ease-in-out;
+		animation-duration: 0.8s;
+		animation-fill-mode: both;
+		position: relative;
+	}
+
+	@keyframes slide-center {
+		0% {
+			background-color: transparent;
+			left: -50px;
+			opacity: 0;
+		}
+
+		100% {
+			left: 0;
+			background-color: #e5dbc1;
+			opacity: 1;
+		}
+	}
+
+	@keyframes slide-left {
+		0% {
+			right: 0;
+			opacity: 1;
+		}
+
+		100% {
+			right: -500px;
+			opacity: 0;
+		}
+	}
+}
+
+.event-info {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	.event-location {
+		background-color: $hover-color;
+		align-items: center;
+	}
+
+	strong {
+		font-family: $heading-font;
+		padding: 0.1rem 1rem;
+		margin-right: 2rem;
+		font-size: 2.5em;
+		background-color: #fff;
+		color: $bg-header;
+	}
+
+	h4 {
+		font-size: 1.2rem;
+	}
+
+	.event-tagline {
+		background-color: #fff;
+		transition: all 1s ease-in-out;
+	}
+}
+
+// benefits
+
+.benefits,
+.benefit-feature-image {
+	align-self: center;
+}
+
+.benefit {
+	margin: 5rem 0;
+}
+
+.benefit-feature-image {
+	img {
+		width: 100%;
+	}
+}
+//slider
+
+.carousel {
+	width: 90%;
+	margin: 0 auto;
+
+	blockquote {
+		font-style: italic;
+		font-size: 1.25rem;
+
+		i {
+			font-size: 0.8rem;
+			position: relative;
+			top: -10px;
+		}
+	}
+}
+
+.feature-users {
+	img {
+		width: 125px;
+		border-radius: 550%;
+		margin: 2.5rem 5rem;
+	}
+
+	i {
+		font-size: 1.5rem;
+	}
+}
+
+// Gallery
+
+.gallery {
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.gallery-info {
+	flex-direction: column;
+
+	.decor-hr {
+		padding-right: 40%;
+		padding-left: 40%;
+	}
+
+	img {
+		margin: 0 1.5rem;
+	}
+
+	h5 {
+		font-size: 1rem;
+		font-weight: 300;
+		margin: 2rem 0;
+	}
+}
+
+.galleries {
+	grid-auto-flow: dense;
+}
+
+.photos {
+	position: relative;
+
+	figure {
+		font-size: 0;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.photo-detail {
+		padding: 2rem 1rem;
+		color: #fff;
+		font-weight: 600;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		align-items: flex-end;
+		transition: all 0.8s ease;
+
+		h6 {
+			font-size: 1rem;
+		}
+
+		p {
+			font-size: 0.8rem;
+		}
+
+		i {
+			font-size: 1;
+			line-height: 1.8;
+		}
+
+		&:hover {
+			opacity: 1;
+			background: linear-gradient(
+				to bottom,
+				rgba(126, 132, 70, 0) 0%,
+				rgba(126, 132, 70, 0.09) 14%,
+				rgba(126, 132, 70, 0.23) 28%,
+				rgba(126, 132, 70, 0.61) 58%,
+				rgba(126, 132, 70, 0.84) 79%,
+				rgba(126, 132, 70, 0.96) 93%,
+				rgba(126, 132, 70, 1) 100%
+			);
+		}
+
+		&:hover .likes {
+			position: relative;
+			padding-right: 1rem;
+			border-right: 1px solid white;
+			animation-name: slide-right;
+			animation-timing-function: ease-in-out;
+			animation-duration: 1s;
+		}
+
+		&:hover .photo-person-info {
+			position: relative;
+			animation-name: slide-left;
+			animation-timing-function: ease-in-out;
+			animation-duration: 1s;
+		}
+	}
+
+	@keyframes slide-right {
+		0% {
+			left: -20px;
+			opacity: 0;
+		}
+
+		100% {
+			left: 0;
+			opacity: 1;
+		}
+	}
+
+	@keyframes slide-left {
+		0% {
+			right: -20px;
+			opacity: 0;
+		}
+
+		100% {
+			right: 0;
+			opacity: 1;
+		}
+	}
+}
+
+// preloader
+
+.preloader {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(
+			to right,
+			rgba(126, 132, 70, 0.98),
+			rgba(126, 132, 70, 0.98)
+		),
+		url(../images/0.5x/Asset-2.png);
+	z-index: 100;
+
+	.preloader-inner::before {
+		display: inline-block;
+		content: "";
+		width: 1rem;
+		height: 1rem;
+		border-radius: 50%;
+		background-color: $hover-color;
+		position: relative;
+		z-index: 1;
+	}
+
+	.preloader-inner {
+		position: relative;
+		top: 50%;
+		left: 50%;
+	}
+
+	.preloader-leaf {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		background-color: rgba(140, 235, 16, 0.9);
+		position: absolute;
+		top: -10px;
+		left: -12px;
+		transform-origin: bottom right;
+		transform: rotate(100deg);
+	}
+
+	.leaf-1 {
+		animation: 3s leaf1 infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	}
+
+	.leaf-2 {
+		animation: 3s leaf2 infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	}
+
+	.leaf-3 {
+		animation: 3s leaf3 infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	}
+
+	.leaf-4 {
+		animation: 3s leaf4 infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	}
+}
+
+@keyframes leaf1 {
+	0% {
+		transform: rotate(0);
+	}
+	30% {
+		transform: rotate(90deg) scale(1.2);
+	}
+	70% {
+		transform: rotate(90deg) scale(1.2);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes leaf2 {
+	0% {
+		transform: rotate(0);
+	}
+	30% {
+		transform: rotate(180deg) scale(1.2);
+	}
+	70% {
+		transform: rotate(180deg) scale(1.2);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes leaf3 {
+	0% {
+		transform: rotate(0);
+	}
+	30% {
+		transform: rotate(270deg) scale(1.2);
+	}
+	70% {
+		transform: rotate(270deg) scale(1.2);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes leaf4 {
+	0% {
+		transform: rotate(0);
+	}
+	30% {
+		transform: rotate(360deg) scale(1.2);
+	}
+	70% {
+		transform: rotate(360deg) scale(1.2);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+// Media Queries
+
+@media screen and (max-width: 1024px) {
+	.hero-img {
+		order: -1;
+		margin-bottom: 5rem;
+	}
+
+	.hero-text {
+		padding: 1rem 2rem;
+	}
+
+	.yogas {
+		flex-flow: column nowrap;
+		height: 500px;
+	}
+
+	.yoga:nth-child(1n + 5) {
+		display: none;
+	}
+
+	.yoga {
+		justify-content: space-evenly;
+		width: 100%;
+
+		div {
+			letter-spacing: 2px;
+		}
+	}
+
+	.yogas-feature-image {
+		order: -1;
+		img {
+			width: 100%;
+		}
+	}
+
+	.call-to-action {
+		.cta {
+			padding-right: 0;
+		}
+
+		.cta-heading {
+			font-size: 3rem;
+		}
+
+		h5 {
+			font-size: 0.9rem;
+		}
+	}
+}

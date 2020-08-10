@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kriya - Register</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="./assets/stylesheets/main.css">
 </head>
-<body>
-    
+
+<body class="register-page">
+    <header class="header">
+        <div class="container flex-center">
+            <input type="checkbox" id="hamburger-menu" class="none">
+            <label for="hamburger-menu" class="hamburger-menu">
+                <i class="fal fa-bars"></i>
+            </label>
+            <a href="./index.html" class="logo-mobile"><img src="./assets/images/logo.png" alt="Kriya Logo"
+                    class="logo"></a>
+            </li>
+            <nav class="nav">
+                <ul class="nav-items flex">
+                    <li class="nav-items__item"><a href="./index.html">Home</a></li>
+                    <li class="nav-items__item"><a href="./about.html">About Us</a></li>
+                    <li class="nav-items__item"><a href="./blog.html">Blog</a></li>
+                    <li class="nav-items__item logo-wrapper"><img src="./assets/images/logo.png" alt="Kriya Logo"
+                            class="logo">
+                    </li>
+                    <li class="nav-items__item"><a href="./courses.html">Courses</a></li>
+                    <li class="nav-items__item"><a href="./shop.html">Shop</a></li>
+                    <li class="nav-items__item"><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a class="register active" href="./register.html"><i class="fad fa-user-alt"></i></a>
+        </div>
+    </header>
+    <section class="main-title-bg-wrapper register-main-title-bg">
+        <div class="container">
+            <h1 class="main-title-section-heading">Registration</h1>
+            <ul class="sub-menu flex-start">
+                <li class="sub-menu-item"><a href="#">Home</a></li>
+                <i class="fas fa-angle-right"></i>
+                <li class="sub-menu-item">Registration</li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <div class="register-section padding">
+            <div class="container grid col-2 col-gap ml">
+                <div class="login-page">
+                    <h3>Login</h3>
+                    <div class="form">
+                        <form>
+                            <input type="email" placeholder='Email' required>
+                            <input type="password" placeholder="Password" required>
+                            <div class="flex mt-05">
+                                <button class="btn primary-btn">Login</button>
+                                <a href="#" class="forgot">Forgot Password ?</a>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="registration-page">
+                    <h3>Register</h3>
+                    <form>
+                        <input type="text" placeholder="Username" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <input type="password" placeholder="Repeat password" required>
+                        <button class="btn mt-05 primary-btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="grid col-4">
+                <div class="working-hour text-right pr-2">
+                    <h4>Work Hours</h4>
+                    <hr class="footer-hr">
+                    <div class="contact">
+                        <h5 class="days">Monday - Thursday</h5>
+                        <strong>0600 - 1800 hrs</strong>
+                        <hr class="footer-border-dashed">
+                    </div>
+                    <div class="contact">
+                        <h5 class="days">Friday & Saturday</h5>
+                        <strong>0600 - 0900 hrs</strong>
+                        <hr class="footer-border-dashed">
+                    </div>
+                    <div class="contact">
+                        <h5 class="days">And all the Sundays</h5>
+                        <strong>Will be Holidays</strong>
+                        <hr class="footer-border-dashed">
+                    </div>
+                </div>
+
+                <div class="footer-about span-2 text-center p-3">
+                    <img src="./assets/images/logo-dark.png" alt="Kriya Logo">
+                    <p>We at KRIYA provide various services to the nature of the clients. Wish how you would like to
+                        spend the time here we can
+                        talk and come to a conclusion.</p>
+                    <p>Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit
+                        magna, nec imperdiet lacus
+                        semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris. Etiam facilisis
+                        eu nisi scelerisque
+                        faucibus. Proin semper suscipit magna, nec imperdiet lacus semper.</p>
+                </div>
+
+                <div class="footer-contact-us text-left pl-2">
+                    <h4>Contact Us</h4>
+                    <hr class="footer-hr">
+                    <div class="contact">
+                        <p><i class="fal fa-phone-alt"></i> Toll Free: <a href="tel:+91 123456789">123 456 7890</a></p>
+                        <p><i class="far fa-fax"></i> Fax: <a href="tel:+123456789">123456789</a></p>
+                        <hr class="footer-border-dashed">
+                    </div>
+                    <div class="contact">
+                        <p><i class="fal fa-envelope"></i> <a href="mailto:#">support@kriya.com</a></p>
+                        <p><i class="fad fa-at"></i> <a href="mailto:#">business@kriya.com</a></p>
+                        <hr class="footer-border-dashed">
+                    </div>
+                    <div class="contact">
+                        <address><i class="fas fa-map-marker-alt"></i> Thehr,
+                            Near Patola Ground
+                            Khaniyara Khas, Dharamsala
+                            Himachal Pradesh - 176218
+                            India</address>
+                        <hr class="footer-border-dashed">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright text-center p-2">
+            <div class="m-1 decor">
+                <hr class="decor-hr">
+                <img src="./assets/images/floral-decor.png" alt="decor">
+                <hr class="decor-hr">
+            </div>
+            <small>KRIYA &copy; 2020. All Right Reserved</small>
+            <div class="footer-social-icon flex-center mt-1">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="far fa-share-alt"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

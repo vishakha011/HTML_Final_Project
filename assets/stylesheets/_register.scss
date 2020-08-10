@@ -1,0 +1,39 @@
+.register-main-title-bg {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url(../images/register-bg.jpg);
+}
+.register-section {
+	background-color: $bg-odd;
+	.flex {
+		align-items: center;
+	}
+	.btn {
+		margin: 0 1.2rem 0 0;
+	}
+}
+.register-page {
+	.user-auth {
+		background-color: $bg-odd;
+		padding-bottom: 25px;
+	}
+
+	.login-page {
+		margin-top: 25px;
+	}
+	.registration-page {
+		margin-top: 25px;
+	}
+	.forgot {
+		color: $text-color;
+	}
+
+	@media only screen and (max-width: 900px) {
+		.col-2 {
+			grid-template-columns: 1fr;
+		}
+
+		.registration-page {
+			margin-top: 66px;
+		}
+	}
+}

@@ -1,0 +1,134 @@
+.course-main-title-bg {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url(../images/Courses/course-bg.jpg);
+}
+
+.course_txt_container {
+	position: relative;
+	text-align: center;
+	color: white;
+	font-size: 1rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+}
+
+.course_img_txt {
+	position: absolute;
+	top: 26rem;
+	right: 0rem;
+	background-color: rgba(72, 67, 52, 0.5);
+	padding: 0 auto;
+	padding-top: 0.5rem;
+	width: 100%;
+	height: 3rem;
+}
+
+// .course_image {
+// 	width: 100%;
+// }
+
+.course_crop {
+	height: 30rem;
+	width: 100%;
+	object-fit: cover;
+}
+
+.course_img_border {
+	border: 1px solid rgba(72, 67, 52, 0.3);
+	border-radius: 0.5rem;
+}
+
+.course_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30rem;
+}
+
+.flip-card {
+	background-color: transparent;
+	width: 100%;
+	height: 30rem;
+	perspective: 1000px;
+
+	.inner {
+		position: relative;
+		width: 100%;
+		height: 30rem;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
+
+		.front,
+		.back {
+			position: absolute;
+			width: 100%;
+			height: 30rem;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.back {
+			background-color: $hover-color;
+			color: $text-color;
+			transform: rotateY(180deg);
+			border: 1px solid rgba(72, 67, 52, 0.3);
+			border-radius: 0.5rem;
+		}
+	}
+
+	&:hover {
+		.inner {
+			transform: rotateY(180deg);
+		}
+	}
+}
+
+.course_margin_top {
+	margin-top: 3rem;
+	color: $bg-header;
+}
+
+.course_margin_top2 {
+	margin-top: 2rem;
+}
+
+.course_margin_top1 {
+	margin-top: 1rem;
+}
+
+.course_btn {
+	// text-transform: uppercase;
+	// font-size: 1rem;
+	// font-weight: 500;
+	padding: 1rem 2rem;
+	// margin-top: 10px;
+	color: white;
+	background-color: $bg-header;
+	// border: 1px solid #a58251;
+	margin-top: 2rem;
+}
+
+.course_btn:hover {
+	color: $text-color;
+	background-color: $hover-color;
+}
+
+// .course_parallax {
+// 	background-image: url("../images/Blog/course.jpeg");
+// 	min-height: 15rem;
+// 	background-attachment: fixed;
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// }
+
+// .course_bg_odd {
+// 	background-color: $bg-odd;
+// }
+
+.course_bg_color,
+.course_bg_even {
+	background-color: $bg-even;
+}

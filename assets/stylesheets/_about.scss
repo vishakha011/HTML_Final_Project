@@ -1,0 +1,618 @@
+.about-main-title-bg {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url(../images/About/breadcrumb-img-about.jpg);
+}
+
+.main-title-bg-wrapper {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 8rem;
+	padding-bottom: 3rem;
+	.main-title-section-heading {
+		font-size: 2.5rem;
+		letter-spacing: 1px;
+		line-height: normal;
+		padding: 0.8rem 0;
+		color: $bg-odd;
+		text-transform: capitalize;
+		font-family: $heading-font;
+	}
+	.sub-menu-item {
+		font-size: 1.2rem;
+		color: $bg-odd;
+		// margin-right: 0.5rem;
+	}
+	.sub-menu-item a {
+		font-size: 1.2rem;
+		color: $bg-header;
+		margin-right: 0.5rem;
+	}
+	.fa-angle-right {
+		font-size: 0.8rem;
+		align-self: center;
+		color: $bg-header;
+		padding-right: 0.8rem;
+		margin-top: 0.2rem;
+	}
+	@media screen and (max-width: 1024px) {
+		text-align: center;
+		.sub-menu {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+
+// About -section
+.about-kriya {
+	background-color: $bg-odd;
+	@media screen and (max-width: 1024px) {
+		text-align: center;
+		.achievement {
+			// text-align: center;
+			margin-top: 3rem;
+		}
+
+		.ctc-text {
+			padding: 2rem 1rem;
+		}
+		.border-center {
+			min-width: 75%;
+			margin: 0 auto;
+		}
+		.border-holder-color {
+			width: 80%;
+			margin: 0 auto;
+			position: unset;
+		}
+	}
+}
+
+.section-sub-heading {
+	font-family: $heading-font;
+	letter-spacing: 0.3rem;
+}
+
+// Vertical border
+.border-holder-width-10 {
+	width: 10%;
+	margin-bottom: 2rem;
+
+	@media screen and (max-width: 1024px) {
+		width: 30%;
+		margin: 0 auto 2rem;
+	}
+}
+.border-holder {
+	height: 1px;
+	position: relative;
+	flex: 1 1 auto;
+	min-width: 10%;
+	.vertical-border {
+		height: 1px;
+		border-top: 1px solid #a58251;
+		display: inline-block;
+		position: relative;
+		top: 1px;
+		width: 100%;
+		&::before {
+			border-top-style: dashed;
+			border-top-width: 1px;
+			border-top-color: inherit;
+			content: "";
+			height: 0;
+			position: absolute;
+			left: 0;
+			bottom: 5px;
+			width: 100%;
+		}
+	}
+}
+// =====================
+
+// scaling of border-cards
+.outer-frame {
+	padding: 0.7rem;
+	position: relative;
+	z-index: 1;
+	&::before,
+	&:after {
+		border: 1px solid;
+		content: "";
+		position: absolute;
+		z-index: -1;
+		transition: all 0.75s linear;
+	}
+
+	&::before {
+		bottom: 0;
+		left: 25px;
+		right: 0;
+		top: 25px;
+		border-color: rgba(0, 0, 0, 0.1);
+	}
+	&::after {
+		bottom: 25px;
+		left: 25px;
+		right: 25px;
+		top: 25px;
+		border-color: #a58251;
+	}
+}
+.outer-frame:hover::before {
+	bottom: 25px;
+	left: 25px;
+	right: 25px;
+	top: 25px;
+	border-color: #a58251;
+}
+.outer-frame:hover::after {
+	bottom: 0;
+	left: 20px;
+	right: 0;
+	top: 20px;
+	border-color: #a58251;
+}
+// ======================
+
+.article-text {
+	margin-top: 2rem;
+}
+.about-text {
+	font-size: 1rem;
+	flex: 0 1 70%;
+}
+.fa-chevron-right {
+	margin-left: 0.5rem;
+}
+
+// Left -Column About kriya article
+.achievement {
+	margin-left: 2rem;
+}
+.right-col-heading {
+	font-size: 1.25rem;
+}
+.status {
+	margin-top: 1rem;
+	.status-img {
+		width: 2.6rem;
+		margin-top: 1rem;
+		height: auto;
+	}
+
+	.about-left-col {
+		margin-left: 2rem;
+	}
+
+	.counter {
+		margin-bottom: 1rem;
+		.number {
+			font-size: 2.8rem;
+			font-weight: 700;
+			position: relative;
+			letter-spacing: 0.4rem;
+			font-family: $heading-font;
+			&::after {
+				content: "";
+				height: 3px;
+				position: absolute;
+				left: 2px;
+				bottom: 0;
+				width: 60px;
+				background-color: $text-color;
+			}
+		}
+		.number-details {
+			font-size: 1rem;
+			margin: 2rem 0 0;
+			font-family: $heading-font;
+			font-style: italic;
+		}
+	}
+}
+
+// TEAM KRIYA
+
+.team-kriya {
+	background-color: $bg-even;
+}
+
+.ico-img {
+	margin: 0 1rem !important;
+	width: 21% !important;
+	// height: 24px;
+}
+.border-margin {
+	margin-bottom: 1rem;
+}
+.border-holder-width-18 {
+	width: 18%;
+}
+
+.team-member-details {
+	flex-wrap: wrap;
+}
+.about-team {
+	margin-top: 2rem;
+	.team-member-img {
+		font-size: 0px;
+	}
+
+	.team-member {
+		text-align: left;
+		padding: 1.2rem;
+		position: relative;
+
+		.member-title {
+			font-size: 1rem;
+			font-style: italic;
+			font-weight: 400;
+			margin-bottom: 0.6rem;
+		}
+		.social-media-icon {
+			margin-right: 1.5rem;
+			.fab {
+				font-size: 1.2rem;
+				color: $text-color;
+			}
+		}
+		.member-desc {
+			margin-top: 1rem;
+		}
+	}
+}
+.pattern-bg {
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	background-color: #fff;
+	background-image: url(../images/pattern-grudge.png);
+	background-repeat: repeat;
+	&:hover {
+		background-color: $hover-color;
+	}
+}
+.member-name,
+.benefit-heading {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-family: $heading-font;
+}
+// About-section-cta
+.about-cta {
+	background: #ece6d7 url(../images/About/floral-bg-parallax.png);
+}
+.call-to-action {
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: cover;
+	background-position: 0 -80px;
+
+	.about-cta-left {
+		background-color: $bg-header;
+		text-align: right;
+		padding-right: 1rem;
+		.cta-heading {
+			font-size: 3.2rem;
+			font-weight: 400;
+			color: #e5dbc1;
+			line-height: 6rem;
+			font-family: $ctc-heading;
+		}
+		.brand-name {
+			font-size: 3.2rem;
+			color: #484338;
+			letter-spacing: 0.3em;
+			text-transform: uppercase;
+			font-family: $heading-font;
+		}
+		.cta-text {
+			color: $bg-odd;
+			padding-left: 9rem;
+		}
+		.border-holder-color {
+			width: 80%;
+			position: relative;
+			left: 8.5rem;
+			margin: 2rem 0;
+			.vertical-border {
+				border-top: 1px solid $bg-odd;
+			}
+		}
+
+		@media screen and (max-width: 1024px) {
+			text-align: center;
+			.cta-text {
+				padding: 2rem 1rem;
+			}
+			.border-center {
+				min-width: 75%;
+				margin: 0 auto;
+			}
+			.border-holder-color {
+				width: 80%;
+				margin: 0 auto;
+				position: unset;
+			}
+			.buttons {
+				@media screen and (max-width: 1024px) {
+					text-align: right;
+				}
+			}
+		}
+	}
+}
+
+.acc-container {
+	padding-left: 2rem;
+	padding-right: 9rem;
+	@media screen and (max-width: 1024px) {
+		padding: 0 1rem;
+	}
+}
+.acc-container .acc-body {
+	height: 0;
+	color: rgba(0, 0, 0, 0);
+	background-color: rgba(255, 255, 255, 0.2);
+	line-height: 28px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+
+.acc-container label {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid #a58251;
+	display: block;
+	padding: 1rem;
+	color: #000;
+	font-size: 1.5rem;
+	font-weight: 700;
+	z-index: 100;
+	transition: color 0.2s ease-in-out;
+}
+
+.acc-container input {
+	display: none;
+}
+
+.acc-container label:before {
+	font-size: 1.2rem;
+	font-family: "Font Awesome 5 Pro";
+	content: "\f067";
+	font-weight: bolder;
+	margin-right: 0.5rem;
+}
+
+.acc-container input:checked + label {
+	color: $bg-header;
+}
+
+.acc-container input:checked + label:before {
+	font-family: "Font Awesome 5 Pro";
+	content: "\f068";
+	transition: 0.5s;
+}
+
+.acc-container input:checked ~ .acc-body {
+	height: auto;
+	color: $text-color;
+	font-size: 16px;
+	padding: 20px;
+	transition: 0.5s;
+}
+
+//   SPEACIAL
+.special-section {
+	background-color: $bg-even;
+}
+.special-progress {
+	margin-top: 4rem;
+}
+.progress-container {
+	width: 10rem;
+	height: 10rem;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+.progress-bar {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+.progressbar_track {
+	fill: transparent;
+	stroke: rgba(163, 154, 154, 0.1);
+	stroke-width: 3px;
+}
+.progressbar_thumb {
+	fill: transparent;
+	stroke-width: 3px;
+	stroke-dasharray: 0 calc(30 * 2 * 3.141593); /*Circumference*/
+	stroke-linecap: round;
+	transform: rotate(-90deg);
+	transform-origin: 50% 50%;
+}
+.progress-80 {
+	stroke: #f26d7d;
+	animation: progress-80 1.2s forwards;
+}
+.progress-60 {
+	stroke: #ffda6b;
+	animation: progress-60 1.2s forwards;
+}
+.progress-65 {
+	stroke: #9bd9da;
+	animation: progress-65 1.2s forwards;
+}
+.progress-75 {
+	stroke: #e09866;
+	animation: progress-75 1.2s forwards;
+}
+.progress-90 {
+	stroke: #bdd52f;
+	animation: progress-90 1.2s forwards;
+}
+.progress-content {
+	text-align: center;
+	color: $text-color;
+	font-size: 2rem;
+	font-weight: 700;
+	font-family: $heading-font;
+	display: inline-block;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 4px;
+		left: -12px;
+	}
+}
+.speciality-section {
+	text-align: center;
+	color: $text-color;
+	margin-top: 2rem;
+	.speciality-name {
+		font-size: 1.2rem;
+		font-weight: 700;
+		color: $text-color;
+		font-family: $heading-font;
+	}
+	.italic {
+		font-size: 1rem;
+		font-style: italic;
+		margin: 0.6rem 0;
+	}
+}
+
+@keyframes progress-80 {
+	to {
+		stroke-dasharray: 150;
+	}
+}
+@keyframes progress-65 {
+	to {
+		stroke-dasharray: 120;
+	}
+}
+@keyframes progress-60 {
+	to {
+		stroke-dasharray: 100;
+	}
+}
+@keyframes progress-75 {
+	to {
+		stroke-dasharray: 140;
+	}
+}
+@keyframes progress-90 {
+	to {
+		stroke-dasharray: 170;
+	}
+}
+
+// WHY_KRIYA
+
+.about-benefit-section {
+	background-color: $bg-odd;
+	@media screen and (max-width: 1024px) {
+		padding-bottom: unset;
+	}
+}
+
+.benefit-cols {
+	margin-top: 7rem;
+	@media screen and (max-width: 1024px) {
+		padding: 4rem 0;
+		margin-top: unset;
+	}
+	.benefit {
+		// width: 25%;
+		padding: 2rem;
+		background-color: $hover-color;
+		box-shadow: 20px 0 30px -20px rgba(0, 0, 0, 0.3) inset;
+
+		.benefit-heading {
+			margin-bottom: 1.4rem;
+		}
+		@media screen and (max-width: 1024px) {
+			// margin-bottom: 4rem;
+		}
+	}
+}
+
+.benefit-icon {
+	border-radius: 50%;
+	display: block;
+	height: 100px;
+	margin: 0 auto -50px;
+	position: relative;
+	top: -80px;
+	text-align: center;
+	width: 100px;
+	background-color: $bg-header;
+	&::after {
+		background-image: url(../images/About/dotted-border.png);
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		bottom: 5px;
+		content: "";
+		left: 5px;
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		opacity: 0;
+	}
+	&:hover {
+		background-color: #000;
+	}
+	&:hover::after {
+		opacity: 1;
+	}
+
+	.fas,
+	.far {
+		font-size: 42px;
+		height: 100%;
+		line-height: 100px;
+		width: 100%;
+		color: $bg-odd;
+	}
+}
+
+.benefit-button {
+	display: block;
+	// height: 100%;
+	margin: 0 auto -35px;
+	position: relative;
+	bottom: -20px;
+	text-align: center;
+	width: 60%;
+	background-color: $bg-header;
+	a {
+		color: $bg-odd;
+		border: none;
+	}
+	&:hover {
+		background-color: #000;
+	}
+}
+
+.benefit-button::after {
+	border: 1px dotted #fff;
+	content: "";
+	position: absolute;
+	bottom: 4px;
+	left: 4px;
+	right: 4px;
+	top: 4px;
+	opacity: 1;
+}

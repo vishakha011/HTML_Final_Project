@@ -1,0 +1,100 @@
+.footer {
+	background-color: $bg-footer;
+
+	h4 {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	h5 {
+		font-size: 1.1rem;
+		font-weight: 400;
+	}
+
+	strong {
+		font-size: 1.25rem;
+		font-weight: 700;
+	}
+
+	a {
+		color: $text-color;
+	}
+
+	i {
+		margin-right: 1rem;
+	}
+
+	img {
+		display: inline-block;
+	}
+}
+
+.working-hour,
+.footer-contact-us {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.footer-hr {
+	display: inline-block;
+	padding: 1.5px 2.5rem;
+	border: none;
+	border-top: 1px dashed #55452f;
+	border-bottom: 1px solid #55452f;
+	margin-bottom: 2.5rem;
+}
+
+.footer-border-dashed {
+	margin: 1rem 0 2rem;
+	border: none;
+	border-bottom: 1px dashed #55452f;
+}
+
+.footer-about {
+	background-color: hsl(35, 45%, 61%);
+
+	p {
+		margin: 2rem 0;
+	}
+}
+
+.copyright {
+	background-color: hsl(35, 29%, 26%);
+	color: $bg-footer;
+
+	small {
+		display: block;
+		font-size: 1.1rem;
+	}
+}
+
+// Social Icon
+
+.footer-social-icon {
+	a {
+		color: #d4ad76;
+		padding: 0.5rem;
+		margin: 0.5rem 1rem;
+	}
+
+	i {
+		margin-right: 0;
+	}
+}
+
+.footer {
+	@media screen and (max-width: 1024px) {
+		.col-4 {
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		.text-right {
+			text-align: left;
+		}
+
+		.working-hour,
+		.footer-contact-us {
+			padding: 2rem;
+		}
+	}
+}

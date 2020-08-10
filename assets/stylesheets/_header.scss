@@ -1,0 +1,179 @@
+.header {
+	background: linear-gradient(
+			to right,
+			rgba($bg-header, 0.95),
+			rgba($bg-header, 0.95)
+		),
+		url(../images/0.5x/Asset-2.png);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 25;
+
+	.container {
+		position: relative;
+	}
+
+	.active {
+		// border-top: 5px solid #ffda6b;
+		// border-bottom: 2px dashed #ffda6b;
+		color: #ffda6b;
+	}
+}
+
+.nav {
+	a {
+		font-family: $nav-font;
+		font-size: 1.1rem;
+		font-weight: 700;
+		color: #fff;
+		padding: 2.1rem 2rem;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			border-top: 5px solid #ffda6b;
+			border-bottom: 2px dashed #ffda6b;
+			color: #ffda6b;
+		}
+	}
+}
+
+.nav-items {
+	.logo {
+		padding: 6px 0;
+
+		&:hover {
+			border: none;
+		}
+	}
+
+	.nav-items__item {
+		margin: 0 0.8rem;
+	}
+}
+
+.hamburger-menu,
+.logo-mobile {
+	display: none;
+}
+
+.register {
+	position: absolute;
+	top: 26px;
+	right: 1%;
+	color: #fff;
+	font-size: 1.2rem;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	border-radius: 10px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		color: $text-color;
+		background-color: $hover-color;
+	}
+}
+
+.header {
+	@media screen and (max-width: 1024px) {
+		padding: 0.5rem;
+
+		.container {
+			justify-content: space-between;
+		}
+
+		.nav-items {
+			align-items: center;
+			flex-flow: column nowrap;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+
+			&:hover {
+				border: none;
+			}
+		}
+
+		.nav {
+			display: none;
+
+			a {
+				padding: 1rem 2rem;
+				font-size: 1.4rem;
+			}
+		}
+
+		.logo-wrapper {
+			margin: 0;
+		}
+
+		.hamburger-menu,
+		.register,
+		.logo-mobile {
+			display: inline-block;
+		}
+
+		.hamburger-menu,
+		.register {
+			position: static;
+			padding: 1rem;
+			font-size: 1.4rem;
+			color: #fff;
+		}
+
+		.hamburger-menu {
+			width: 12px;
+		}
+
+		input[id="hamburger-menu"]:checked ~ nav {
+			display: inline-block;
+			position: fixed;
+			z-index: 11;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: rgba($bg-header, 0.8);
+			animation: slideDown 0.3s ease-in;
+		}
+
+		input[id="hamburger-menu"]:checked ~ label i::before {
+			content: "\f00d";
+			font-size: 1.6rem;
+		}
+
+		.nav-items__item {
+			margin: 0.5rem 0;
+		}
+
+		.logo-wrapper {
+			display: none;
+		}
+
+		.hamburger-menu {
+			position: relative;
+			z-index: 12;
+		}
+
+		.register {
+			display: inline-flex;
+		}
+	}
+}
+
+@keyframes slideDown {
+	0% {
+		bottom: -100%;
+		background: transparent;
+	}
+
+	100% {
+		bottom: 0;
+		background: rgba($bg-header, 0.8);
+	}
+}

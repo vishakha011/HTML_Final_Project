@@ -1,39 +1,239 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .container {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 16px;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 16px;
 }
 
 .padding {
-    padding: 5rem 0;
+	padding: 4rem 0;
 }
 
-
 .img-responsive {
-    width: 100%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 a {
-    text-decoration: none;
-    display: inline-block;
-}  
+	text-decoration: none;
+	display: inline-block;
+}
 
 .text-center {
-    text-align: center;
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.none {
+	display: none;
 }
 
 .btn {
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 1rem 2rem;
-    margin-top: 10px;
-    color: #484338;;
-    border: 1px solid #a58251;
+	text-transform: uppercase;
+	font-family: $body-font;
+	font-size: 1rem;
+	font-weight: 700;
+	padding: 0.6rem 1.25rem;
+	margin-top: 10px;
+	color: #484338;
+	border: 1px solid #a58251;
+	overflow: hidden;
+}
+
+.primary-btn {
+	color: #484338;
+	border-color: #a58251;;
+	background-color: #fff;
+	margin-top: 0.6rem;
+	background-image: url(../images/pattern-grudge.png);
+	background-repeat: repeat;
+	position: relative;
+	transition: all 0.6s;
+	align-self: flex-start;
+	&:hover {
+		border-color: #a58251;
+		color: #484338;
+		background-color: $hover-color;
+	}
+	@media screen and (max-width: 1024px) {
+		margin: 0 1rem;
+	}
+}
+.about-secondary-btn {
+	background-color: #484338;
+	color: #f2e9d2;
+	margin-top: 0.6rem;
+	margin-right: 2rem;
+	@media screen and (max-width: 1024px) {
+		margin: 0 1rem 0.8rem;
+	}
+}
+.home-secondary-btn {
+	background-color: $bg-header;
+	color: #f2e9d2;
+	margin-top: 0.6rem;
+	margin-right: 2rem;
+	@media screen and (max-width: 1024px) {
+		margin: 0 1rem 0.8rem;
+	}
+}
+
+.fa-chevron-right {
+	margin-left: 0.5rem
+}
+/* 
+    ========== margins ===========
+    mt - margin-top
+    mb - margin-bottom
+    ml - margin-left
+    mr - margin-right
+
+    mr-2 - margin-right: 2rem;
+*/
+
+.mt-2 {
+	margin-top: 2rem;
+}
+
+.mt-4 {
+	margin-top: 4rem;
+}
+
+.mt-6 {
+	margin-top: 6rem;
+}
+
+.m-1 {
+	margin: 1rem;
+}
+
+.mt-05 {
+	margin-top: 0.5rem;
+}
+.mb-1 {
+	margin-bottom: 1rem;
+}
+// padding
+
+.pr-2 {
+	padding-right: 2rem;
+}
+
+.pl-2 {
+	padding-left: 2rem;
+}
+
+.p-3 {
+	padding: 3rem;
+}
+
+.p-2 {
+	padding: 2rem;
+}
+
+.p-1 {
+	padding: 1rem;
+}
+
+.pt-6 {
+	padding-top: 6rem;
+}
+
+.pt-7 {
+	padding-top: 7rem;
+}
+
+.ptb-3 {
+	padding: 3rem 0;
+}
+
+.ptb-2 {
+	padding: 2rem 0;
+}
+
+.ptb-1 {
+	padding: 1rem 0;
+}
+
+.ptb-5 {
+	padding: 5rem;
+}
+
+.ptb-6 {
+	padding: 6rem 0;
+}
+
+.ptb-7 {
+	padding: 7rem 0;
+}
+
+// decor similar to copyright part refer footer html how to use that
+
+.decor {
+	padding: 1rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		margin: 0 2rem;
+		width: 100%;
+		height: 24px;
+	}
+
+	.decor-hr {
+		border: 0;
+		padding: 0.1rem 80%;
+		border-top: 1px dashed $bg-footer;
+		border-bottom: 1px solid $bg-footer;
+		margin-bottom: 0;
+		align-self: flex-start;
+	}
+
+	@media screen and (max-width: 1024px) {
+		img {
+			margin: 0 1rem;
+		}
+
+		.decor-hr {
+			padding: 0.1rem 40%;
+		}
+	}
+}
+
+// Multiple line border decor
+
+.multiple-border-decor-hr {
+	border: none;
+	border-top: 1px dashed #55452f;
+	border-bottom: 1px solid #55452f;
+	margin: 2.5rem 0;
+	padding: 1.5px;
+}
+
+.dashed-border {
+	border: 0;
+	border-top: 1px dashed #55452f;
+	margin: 1rem 0;
 }
